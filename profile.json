@@ -1,0 +1,102 @@
+
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+ 	"initialCols": 120,
+    "initialRows": 38,    
+
+    "profiles":
+    [
+		 {
+            // Make changes here to the cmd.exe profile
+            "fontFace":"DejaVu Sans Mono",
+            "fontSize":10,            
+            "backgroundImageOpacity": 0.5,
+            "backgroundImage": "F:/wallpaper/fish.jpg",
+            "backgroundImageStretchMode": "fill",
+            "startingDirectory" : null, 
+            "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "name": "cmd",
+            "commandline": "cmd.exe",
+            "hidden": false
+        },    	
+        {
+            // Make changes here to the powershell.exe profile
+            //"fontFace":"Sarasa Mono T SC",
+            "fontFace":"Fira Code",
+            "fontSize":10,            
+            "backgroundImageOpacity": 0.3,
+            "backgroundImage": "F:/wallpaper/sleep.jpg",
+            "backgroundImageStretchMode": "fill",
+            "startingDirectory" : null, 
+            "padding": "0",
+            "cursorColor": "#FFFFFF",    
+            "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "name": "PowerShell",
+            "commandline": "powershell.exe",
+            "hidden": false
+        },
+        {
+            "fontFace":"DejaVu Sans Mono",
+            "fontSize":10,            
+            "backgroundImageOpacity": 0.5,
+            "backgroundImage": "F:/wallpaper/night.jpg",
+            "backgroundImageStretchMode": "fill",           
+            "startingDirectory" : null, 
+            "padding": "0, 0, 0, 0",
+            //"useAcrylic": true,
+            //"acrylicOpacity": 0.3,
+            "guid": "{6f9994f0-4403-5e85-9cce-98e5da3839bb}",
+            "hidden": false,
+            "name": "Ubuntu-16.04",
+            "source": "Windows.Terminal.Wsl"
+        },
+        {
+            "fontFace":"DejaVu Sans Mono",
+            "fontSize":10,            
+            "backgroundImageOpacity": 0.5,
+            "backgroundImage": "F:/wallpaper/summer.jpg",
+            "backgroundImageStretchMode": "fill",           
+            "startingDirectory" : null, 
+            "padding": "0, 0, 0, 0",
+            "commandline": "ssh root@chenjianyin.com",
+            "icon" : "E:/icon/aliyun.png",
+            "guid": "{a7a81acc-61e9-43de-b7c5-488c01525e7a}",
+            "hidden": false,
+            "name": "aliyun"
+        }, 
+ 		{
+            "fontFace":"DejaVu Sans Mono",
+            "fontSize":10,            
+            "backgroundImageOpacity": 0.5,
+            "backgroundImage": "F:/wallpaper/summer.jpg",
+            "backgroundImageStretchMode": "fill",           
+            "startingDirectory" : null, 
+            "padding": "0, 0, 0, 0",
+            "commandline": "ssh chenjy@192.168.127.133",
+            "icon" : "E:/icon/centOS.png",
+            "guid": "{a7a81acc-61e9-43de-b7c5-488c01525e8a}",
+            "hidden": false,
+            "name": "vm_centos"
+        },               
+        {
+            "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+            "hidden": false,
+            "name": "Azure Cloud Shell",
+            "source": "Windows.Terminal.Azure"
+        }
+    ],
+
+    // Add custom color schemes to this array
+    "schemes": [],
+
+    // Add any keybinding overrides to this array.
+    // To unbind a default keybinding, set the command to "unbound"
+    "keybindings": [
+        { "command": "newTab", "keys": [ "ctrl+t" ] }
+    ]
+}
